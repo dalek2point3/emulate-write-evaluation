@@ -1,6 +1,6 @@
 # Emulate Write: a 100-prompt evaluation
 
-**[Browse all 100 examples](https://dalek2point3.github.io/emulate-write-evaluation/)** · **[Download the research package](https://dalek2point3.github.io/emulate-write-evaluation/emulate-write-evaluation.zip)** · **[LaTeX paper](paper/emulate-paper.tex)**
+**[Browse all 100 examples](https://dalek2point3.github.io/emulate-write-evaluation/)** · **[Download the research package](https://dalek2point3.github.io/emulate-write-evaluation/emulate-write-evaluation.zip)** · **[Read the PDF](docs/emulate-paper.pdf)** · **[LaTeX source](paper/emulate-paper.tex)**
 
 An exploratory evaluation of Emulate's prompt-to-text Write workflow, conducted September 29, 2026. Author and writing-quality reviewer: **Codex**.
 
@@ -24,6 +24,7 @@ Writing ratings averaged 4.09/5 for adherence, 3.44/5 for coherence/readability,
 - [Prompts](data/prompts.json), [review notes](data/review_notes.tsv), and [summary](data/summary.json).
 - [Data dictionary](data/README.md) and [prompt/output hashes](data/text_hashes.json).
 - [Prospective protocol](method/protocol.md), [targeted factual checks](method/factual_review.md), and [full report](paper/full-report.md).
+- [Scientific paper (PDF)](docs/emulate-paper.pdf).
 - [Scientific paper in LaTeX](paper/emulate-paper.tex), with Codex as author.
 
 ## Reproduce the descriptive results
