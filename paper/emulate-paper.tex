@@ -3,7 +3,8 @@
 \usepackage{amsmath,booktabs,threeparttable,siunitx}
 \usepackage[hidelinks]{hyperref}
 \sisetup{detect-all}
-\title{Writing Quality and AI-Detector Labels in Emulate Write:\\ A 100-Prompt Exploratory Evaluation}
+\setlength{\emergencystretch}{1em}
+\title{Writing Quality and AI-Detector Labels in Emulate Write:\\ A 200-Prompt, Two-Round Exploratory Evaluation}
 \author{Codex}
 \date{September 29, 2026}
 
@@ -11,7 +12,7 @@
 \maketitle
 
 \begin{abstract}
-We evaluate Emulate Write on 100 fixed English prompts spanning ten writing categories. One unedited output is retained per prompt and assessed for writing quality before its submission to Pangram 4. Pangram classifies 85 outputs as Human, seven as Mixed, and eight as AI. The Human-label share is 85\% (descriptive Wilson 95\% interval: 76.7--90.7\%). Mean ratings on five-point scales are 4.09 for prompt adherence, 3.44 for coherence and readability, and 3.54 for development and usefulness. Thirteen outputs receive coherence ratings indicating major weaknesses; 70 satisfy a $\pm20\%$ length tolerance. Several Human-labeled outputs contain contradictions or incomplete instructions. The results document frequent detector non-detection within this sample, alongside uneven writing quality. Convenience sampling, a single AI reviewer, and the absence of comparison systems and human controls preclude broader performance claims.
+We evaluate Emulate Write on 200 English prompts across ten writing categories in two rounds. One unedited output is retained per prompt and rated before that round's Pangram 4 results are inspected. Pangram classifies 166 outputs as Human, nine as Mixed, and 25 as AI. The pooled Human-label share is 83\% (descriptive Wilson 95\% interval: 77.2--87.6\%); round-specific shares are 85\% and 81\%. Mean ratings on five-point scales are 4.06 for adherence, 3.49 for coherence/readability, and 3.52 for development/usefulness. Twenty-one outputs receive coherence ratings indicating major weaknesses; 132 satisfy a $\pm20\%$ length tolerance. The second round uses new scenarios and some more explicit constraints informed by first-round findings. It is an adaptive extension, not a blinded replication. Frequent detector non-detection coexists with uneven writing quality. Convenience sampling, adaptive prompting, a single AI reviewer, and no comparison systems or human controls limit generalization.
 \end{abstract}
 
 \section{Introduction}
@@ -21,12 +22,14 @@ We evaluate Emulate's prompt-to-text Write feature. No externally authored draft
 
 \section{Design and measurement}
 \subsection{Sample and generation protocol}
-The prompt set was fixed before generation and comprises ten broad categories, each with ten distinct subcategories. Each category contains two 150-word, three 200-word, three 300-word, and two 500-word requests, yielding 28,000 requested words. Tasks include fiction, historical explanation, workplace communication, educational materials, and practical instructions.
+The sample comprises two rounds of 100 prompts. In each round, ten broad categories contain ten distinct task types. Every category has two 150-word, three 200-word, three 300-word, and two 500-word requests: 28,000 requested words per round and 56,000 overall. The expanded dataset has 20 observations per category and two per task type, using different scenarios.
 
-Requests were submitted to Emulate's \texttt{/v1/write} endpoint. The first successful output was retained without editing, best-of-$N$ selection, or detector feedback. All 100 requests succeeded on their first attempt, with no retries or exclusions. Generation occurred on September 29, 2026, between 18:18:44 and 18:30:10 UTC, with up to three concurrent requests. The API did not expose the underlying model revision or decoding settings.
+Each round's prompts were fixed before its generation requests. Round 2 was designed with knowledge of round-1 findings; some instructions make previously missed constraints more explicit. It is therefore an adaptive extension rather than a blinded replication. Round-specific and pooled statistics are both reported, without attributing between-round differences to product changes or prompt effects.
+
+Requests used Emulate's \texttt{/v1/write} endpoint, with up to three concurrent requests. The first successful response was retained without editing, best-of-$N$ selection, or detector-guided output selection. All 200 generation requests succeeded on their first attempt. Generation occurred on September 29, 2026: round 1 at 18:18--18:30 UTC and round 2 at 22:56--23:07 UTC. The API did not expose the underlying model revision or decoding settings.
 
 \subsection{Writing assessment}
-Codex, a single AI assistant reviewer, rated every output before inspecting detector results. Ratings cover prompt adherence, coherence/readability, and development/usefulness, including imaginative development where appropriate. The scale is ordinal: 1 denotes failure to meet the criterion; 2, a major weakness; 3, a noticeable weakness; 4, a minor weakness; and 5, full satisfaction. Means summarize the ratings descriptively and assume equal spacing between scale points; they are not calibrated measures of utility or independent human judgments.
+Codex, a single AI assistant reviewer, rated every output before inspecting detector results for its round. Ratings cover prompt adherence, coherence/readability, and development/usefulness, including imaginative development where appropriate. The scale is ordinal: 1 denotes failure to meet the criterion; 2, a major weakness; 3, a noticeable weakness; 4, a minor weakness; and 5, full satisfaction. Means summarize the ratings descriptively and assume equal spacing between scale points; they are not calibrated measures of utility or independent human judgments.
 
 Concrete review notes accompany every output. Let $w_i$ denote the observed whitespace-separated word count, including headings, and $r_i$ the requested count. Length compliance is defined as
 \begin{equation}
@@ -35,50 +38,54 @@ Concrete review notes accompany every output. Let $w_i$ denote the observed whit
 No observation was excluded for poor quality or length noncompliance. Selected factual claims were checked against external sources; these checks were not exhaustive and do not yield a corpus-wide factual-accuracy estimate.
 
 \subsection{Detector assessment and estimand}
-Every original output was submitted unchanged to Pangram's bulk API using the explicit \texttt{pangram-4} selector. All 100 checks completed and returned version 4.0. The prespecified primary statistic is
+Every original output was submitted unchanged to Pangram's bulk API, selecting \texttt{pangram-4}. All 200 checks completed and returned version 4.0. The initial round-2 submission was rejected for insufficient credits; after funding, the same saved texts were accepted. This administrative retry involved no regeneration or selection. The prespecified primary statistic is
 \begin{equation}
- \widehat{p}_{H}=\frac{1}{100}\sum_{i=1}^{100}\mathbf{1}\{D_i=\text{Human}\},
+ \widehat{p}_{H}=\frac{1}{N}\sum_{i=1}^{N}\mathbf{1}\{D_i=\text{Human}\},
 \end{equation}
-where $D_i$ is the document-level classification. Mixed and AI remain separate outcomes. The submitted payload matched the original Emulate outputs byte-for-byte. Pangram normalized whitespace in returned text fields, with no other content differences detected. Requests, responses, timestamps, and hashes were retained.
+where $D_i$ is the document-level classification and $N$ is 100 for each round or 200 for the pooled sample. Mixed and AI remain separate outcomes. The submitted payload matched the original Emulate outputs byte-for-byte. Pangram normalized whitespace in returned text fields, with no other content differences detected. Requests, responses, timestamps, and hashes were retained.
 
-The estimand is the Human-label share for this fixed prompt set and observed run. A Wilson interval is reported as a descriptive binomial reference under independent observations; it does not incorporate uncertainty from prompt selection, shared model behavior, or variation across repeated generations.
+The estimand is the Human-label share for the selected prompt sets and observed runs. A Wilson interval is reported as a descriptive binomial reference under independent observations; it does not incorporate uncertainty from prompt selection, shared model behavior, adaptive prompting, or variation across repeated generations.
 
 \section{Results}
 \subsection{Aggregate outcomes}
-Pangram assigned Human labels to 85 outputs, Mixed labels to seven, and AI labels to eight (Table~\ref{tab:aggregate}). Thus, $\widehat{p}_{H}=0.85$, with a descriptive 95\% Wilson interval of $[0.767,0.907]$. An additional window-level humanizer flag appeared in six documents, all in the Mixed or AI groups. This auxiliary flag did not change the primary outcome definition.
+Pangram assigned Human labels to 166 outputs, Mixed labels to nine, and AI labels to 25 (Table~\ref{tab:aggregate}). The pooled share is $\widehat{p}_H=0.83$, with a descriptive 95\% Wilson interval of $[0.772,0.876]$. Round 2 produced 81 Human, two Mixed, and 17 AI labels, compared with 85, seven, and eight in round 1. These are descriptive differences across distinct prompt sets.
 
 \begin{table}[htbp]
 \centering
 \begin{threeparttable}
-\caption{Aggregate detector and writing outcomes}
+\caption{Detector and writing outcomes by round}
 \label{tab:aggregate}
-\begin{tabular}{l S[table-format=3.2] l}
+\begin{tabular}{l S[table-format=3.2] S[table-format=3.2] S[table-format=3.2]}
 \toprule
-Outcome & {Value} & Unit \\
+Outcome & {Round 1} & {Round 2} & {Pooled} \\
 \midrule
-\multicolumn{3}{l}{\textit{Panel A: Detector classifications}} \\
-Human & 85 & Documents (85\%) \\
-Mixed & 7 & Documents (7\%) \\
-AI & 8 & Documents (8\%) \\
+Observations & 100 & 100 & 200 \\
 \addlinespace
-\multicolumn{3}{l}{\textit{Panel B: Writing assessment}} \\
-Prompt adherence & 4.09 & Mean rating, 1--5 \\
-Coherence/readability & 3.44 & Mean rating, 1--5 \\
-Development/usefulness & 3.54 & Mean rating, 1--5 \\
-Coherence rating $\leq 2$ & 13 & Documents (13\%) \\
-Within length tolerance & 70 & Documents (70\%) \\
+\multicolumn{4}{l}{\textit{Panel A: Detector classifications (counts)}} \\
+Human & 85 & 81 & 166 \\
+Mixed & 7 & 2 & 9 \\
+AI & 8 & 17 & 25 \\
+\addlinespace
+\multicolumn{4}{l}{\textit{Panel B: Writing ratings (means, 1--5)}} \\
+Prompt adherence & 4.09 & 4.02 & 4.06 \\
+Coherence/readability & 3.44 & 3.53 & 3.49 \\
+Development/usefulness & 3.54 & 3.50 & 3.52 \\
+\addlinespace
+\multicolumn{4}{l}{\textit{Panel C: Writing constraints (counts)}} \\
+Coherence rating $\leq 2$ & 13 & 8 & 21 \\
+Within length tolerance & 70 & 62 & 132 \\
 \bottomrule
 \end{tabular}
 \begin{tablenotes}[flushleft]\footnotesize
-\item \textit{Notes:} $N=100$ for every outcome. Length tolerance is $\pm20\%$ of requested words. Ratings were assigned by one AI assistant reviewer before detector results were inspected. A Human label does not imply human provenance.
+\item \textit{Notes:} Length tolerance is $\pm20\%$ of requested words. Ratings are subjective judgments by one AI assistant, recorded before each round's detector scores were inspected. Means are computed from individual ratings and rounded to two decimals (half up). Round 2 is an adaptive extension. A Human label does not imply human provenance.
 \end{tablenotes}
 \end{threeparttable}
 \end{table}
 
-Writing ratings averaged 4.09 for adherence, 3.44 for coherence/readability, and 3.54 for development/usefulness. Thirteen outputs received coherence ratings of 1 or 2. Seventy met the length tolerance. Total output was 29,365 words, 4.9\% above the aggregate requested length; this aggregate difference masks individual deviations in both directions. Emulate reported charging 28,000 words. Median generation latency was 16.85 seconds per request under the tested concurrency.
+Pooled ratings average 4.06 for adherence, 3.49 for coherence/readability, and 3.52 for development/usefulness. Twenty-one texts (10.5\%) received coherence ratings of 1 or 2. Length compliance is 66\% overall, versus 70\% in round 1 and 62\% in round 2. Outputs total 60,087 words, 7.3\% above the aggregate requested length; aggregate excess masks individual shortfalls and overages. Emulate reported charging 56,000 words in total. Median request latency was 16.85 seconds in round 1 and 17.29 seconds in round 2.
 
 \subsection{Category-level outcomes}
-Table~\ref{tab:categories} reports results by category. Science and technology received the highest mean writing rating (4.30), while essays and humanities received the lowest (3.17). Both categories received ten Human labels. These are within-sample descriptions, not stable rankings or evidence of a general relationship between writing quality and detection.
+Table~\ref{tab:categories} reports pooled outcomes. Science and technology has the highest mean writing rating (4.05), while essays and humanities has the lowest (3.32). Science and practical guides each receive 19 Human labels out of 20. These within-sample descriptions establish neither stable rankings nor a general relationship between quality and detection.
 
 \begin{table}[htbp]
 \centering
@@ -93,39 +100,39 @@ Table~\ref{tab:categories} reports results by category. Science and technology r
 \cmidrule(lr){3-5}
 Category & {$N$} & {Human} & {Mixed} & {AI} & {Rating} \\
 \midrule
-Creative writing & 10 & 9 & 1 & 0 & 3.20 \\
-Essays and humanities & 10 & 10 & 0 & 0 & 3.17 \\
-Science and technology & 10 & 10 & 0 & 0 & 4.30 \\
-Business and workplace & 10 & 6 & 2 & 2 & 3.83 \\
-Journalism and commentary & 10 & 8 & 1 & 1 & 3.37 \\
-Personal communication & 10 & 9 & 0 & 1 & 3.77 \\
-Education & 10 & 8 & 2 & 0 & 3.83 \\
-Marketing and product writing & 10 & 7 & 1 & 2 & 3.67 \\
-Practical guides and reviews & 10 & 10 & 0 & 0 & 3.73 \\
-Civic and community writing & 10 & 8 & 0 & 2 & 4.03 \\
+Creative writing & 20 & 18 & 1 & 1 & 3.33 \\
+Essays and humanities & 20 & 18 & 0 & 2 & 3.32 \\
+Science and technology & 20 & 19 & 0 & 1 & 4.05 \\
+Business and workplace & 20 & 14 & 2 & 4 & 3.60 \\
+Journalism and commentary & 20 & 14 & 2 & 4 & 3.50 \\
+Personal communication & 20 & 16 & 0 & 4 & 3.75 \\
+Education & 20 & 15 & 2 & 3 & 3.87 \\
+Marketing and product writing & 20 & 15 & 2 & 3 & 3.75 \\
+Practical guides and reviews & 20 & 19 & 0 & 1 & 3.75 \\
+Civic and community writing & 20 & 18 & 0 & 2 & 3.95 \\
 \bottomrule
 \end{tabular}
 \begin{tablenotes}[flushleft]\footnotesize
-\item \textit{Notes:} Classification columns report document counts. Rating is the unweighted mean across three dimensions and ten texts, on a 1--5 scale. Each subcategory has one observation. No hypothesis tests or population rankings are implied.
+\item \textit{Notes:} Classification columns report document counts. Rating is the unweighted mean across three dimensions and 20 texts, on a 1--5 scale. Each task type has one observation per round. No hypothesis tests or population rankings are implied.
 \end{tablenotes}
 \end{threeparttable}
 \end{table}
 
 \subsection{Illustrative writing defects}
-Several Human-labeled texts contain substantive defects. An ethics essay (W013) repeatedly advocates usually breaking promises before concluding that promises should usually be kept. A sports report (W047) confuses the home and visiting teams and describes an equalizer as breaking a deadlock. A thank-you letter (W055) retains ``Thanks for Helping Me Move Sample'' in its body. Craft instructions (W087) end the requested troubleshooting advice at ``then:'' without completion. These selected examples illustrate failure modes; they are not a separately sampled estimate of defect prevalence.
+Human-labeled texts contain substantive defects in both rounds. In round 1, an ethics essay (W013) contradicts its own recommendation about keeping promises, and craft instructions (W087) end at ``then:'' without completing the requested tip. In round 2, a watch-repairer profile (W144) ends with an unsolicited roleplay invitation and contains continuity errors. A Gandhi essay (W111), also labeled Human, misattributes the purchase of Tolstoy Farm to Gandhi rather than Hermann Kallenbach. Conversely, Pangram labels the flawed climate explanation (W121) and incomplete return instructions (W135) AI. These selected cases illustrate failure modes; they do not estimate a separate error rate or establish a statistical relationship between detection and quality. Source-based factual notes are supplied with the dataset.
 
 \section{Interpretation and limitations}
 The main result is the coexistence of frequent Human classifications and uneven writing quality. Because all outputs have known AI provenance, Human labels represent non-detection on this sample. They establish neither human authorship nor publication readiness. The writing defects motivate assessing instruction following, continuity, completeness, and factual care separately from detector classifications.
 
-The design uses a convenience sample of English prompts, one output per prompt, one product workflow, and one detector version. Category samples are small. There is no comparison generator, authentic-human control, or repeated sampling. The study therefore does not identify comparative product effects, overall detector accuracy, the false-positive rate on human writing, or reliability across repeated generations.
+The design uses a convenience sample of English prompts, one output per prompt, one product workflow, and one detector version. Category samples remain small, and the second round is informed by the first. The larger sample does not remove selection bias or reviewer dependence. There is no comparison generator, authentic-human control, or repeated sampling. The study therefore does not identify comparative product effects, overall detector accuracy, the false-positive rate on human writing, or reliability across repeated generations.
 
-Ratings reflect one assistant reviewer's judgments, with knowledge of the product and prompts. Completing ratings before examining detector results reduced one potential source of influence but did not constitute fully blinded or independent assessment. The ordinal scales are unvalidated, and targeted factual checks do not establish comprehensive factual reliability. A follow-up design should include comparison systems, authentic human texts, repeated generations, and multiple independent human reviewers using a calibrated rubric.
+Ratings reflect one assistant reviewer's judgments, with knowledge of the product and prompts. Completing ratings before examining each round's detector results reduced one potential source of influence but did not constitute fully blinded or independent assessment. The ordinal scales are unvalidated, and targeted factual checks do not establish comprehensive factual reliability. A follow-up design should include comparison systems, authentic human texts, repeated generations, and multiple independent human reviewers using a calibrated rubric.
 
 \section{Conclusion}
-Among 100 direct writing tasks, Emulate generated 85 outputs that Pangram 4 labeled Human. Thirty outputs missed the stated length tolerance, and 13 had major coherence weaknesses under the review rubric. The evidence supports a narrow conclusion of frequent Pangram non-detection on these prompts, alongside continued need for editorial review.
+Among 200 direct writing tasks, Emulate generated 166 outputs that Pangram 4 labeled Human. Sixty-eight texts missed the length tolerance, and 21 had major coherence weaknesses under the review rubric. The expanded sample supports a narrow finding of frequent Pangram non-detection alongside uneven writing quality. The adaptive design limits interpretation of the change from 85\% to 81\% across rounds.
 
 \section*{Data availability and disclosure}
-The accompanying evaluation package, \texttt{emulate-write-evaluation.zip}, contains the prompts, original outputs, individual reviews, detector results, prospective protocol, targeted factual checks, and an offline verification script. Account-access records and internal service identifiers are omitted from this public package. It is distributed separately; the paper does not embed the dataset. Credentials are excluded. Codex is the AI assistant author and the sole writing-quality reviewer; no independent human rating panel was used.
+Data, prompts, exact outputs, reviews, protocols, factual checks, and an offline verification script are available at \url{https://github.com/dalek2point3/emulate-write-evaluation}. The searchable report and downloadable package are linked there. Each observation is labeled by round. The original release is preserved under the tag \texttt{v1-100-texts}. Raw account-access records, credentials, and internal service identifiers are excluded from the public release. Codex is the AI assistant author and sole writing-quality reviewer; no independent human rating panel was used.
 
 \section*{Service documentation}
 \noindent Emulate API documentation: \url{https://www.tryemulate.ai/docs/api}.

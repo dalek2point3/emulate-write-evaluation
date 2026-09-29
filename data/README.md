@@ -1,10 +1,11 @@
 # Data dictionary
 
-`evaluation.json` contains `summary` (aggregate statistics) and `examples` (100 records). `examples.jsonl` contains the same example records, one per line. UTF-8 text is used throughout. Original whitespace is preserved in each `text` field.
+`evaluation.json` contains `summary` (aggregate statistics) and `examples` (200 records). `examples.jsonl` contains the same example records, one per line. UTF-8 text is used throughout. Original whitespace is preserved in each `text` field.
 
 | Field | Meaning |
 |---|---|
-| `id` | Stable example ID, W001–W100 |
+| `id` | Stable example ID, W001–W200 |
+| `round` | Generation round, 1 or 2; round 2 is an adaptive extension |
 | `category`, `subcategory` | Broad category and distinct task type |
 | `prompt` | Exact instruction submitted to Emulate |
 | `requested_words` | Requested word count |
@@ -25,4 +26,4 @@ Rating values are stored as strings in the original joined data; convert to inte
 
 `prompts.json` uses `words` for the requested length and contains a SHA-256 prompt hash. `review_notes.tsv` is the preserved review table. `text_hashes.json` separately records SHA-256 hashes of the UTF-8 prompt and output text for each example.
 
-Summary category intervals and means describe this sample only. The estimated Pangram bulk charge in the summary is a calculation from word counts and the published rate, not an invoice. The six documents with an auxiliary humanizer flag are represented in the aggregate summary; raw window-level flags are not included in this curated release.
+The summary contains pooled statistics plus `rounds` and `categories` breakdowns. Means use decimal half-up rounding to two places. Intervals and means describe this convenience sample only; they do not correct for adaptive prompting or reviewer dependence. Auxiliary detector flags and billing estimates are not included in this release's summary. The original 100-text release remains available under the `v1-100-texts` tag.

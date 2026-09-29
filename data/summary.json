@@ -1,212 +1,376 @@
 {
-  "built_at": "2026-09-29T18:39:12.302443+00:00",
-  "planned": 100,
-  "generated": 100,
-  "detected": 100,
+  "n": 200,
   "labels": {
-    "Human": 85,
-    "Mixed": 7,
-    "AI": 8
+    "Human": 166,
+    "Mixed": 9,
+    "AI": 25
   },
-  "human_count": 85,
-  "human_rate_completed": 0.85,
-  "human_rate_planned": 0.85,
+  "human_rate": 0.83,
   "human_wilson95": [
-    0.7671644040916763,
-    0.9069401471634337
+    0.7718411637168737,
+    0.8757209208741302
   ],
-  "output_words": 29365,
-  "requested_words": 28000,
-  "charged_words": 28000,
-  "within_length": 70,
-  "reviewed": 100,
-  "median_latency_seconds": 16.85,
+  "requested_words": 56000,
+  "output_words": 60087,
+  "charged_words": 56000,
+  "within_length": 132,
   "quality_means": {
-    "adherence": 4.09,
-    "coherence": 3.44,
-    "development": 3.54
+    "adherence": 4.06,
+    "coherence": 3.49,
+    "development": 3.52
   },
+  "quality_mean": 3.69,
+  "coherence_at_most_2": 21,
+  "median_latency_seconds": 17.13,
   "versions": {
-    "4.0": 100
+    "4.0": 200
   },
-  "average_fractions": {
-    "fraction_ai": 0.10112778827548027,
-    "fraction_ai_assisted": 0.0,
-    "fraction_human": 0.8988722121715546
-  },
-  "category": [
+  "rounds": [
+    {
+      "round": 1,
+      "n": 100,
+      "labels": {
+        "Human": 85,
+        "Mixed": 7,
+        "AI": 8
+      },
+      "human_rate": 0.85,
+      "human_wilson95": [
+        0.7671644040916763,
+        0.9069401471634337
+      ],
+      "requested_words": 28000,
+      "output_words": 29365,
+      "charged_words": 28000,
+      "within_length": 70,
+      "quality_means": {
+        "adherence": 4.09,
+        "coherence": 3.44,
+        "development": 3.54
+      },
+      "quality_mean": 3.69,
+      "coherence_at_most_2": 13,
+      "median_latency_seconds": 16.85,
+      "versions": {
+        "4.0": 100
+      }
+    },
+    {
+      "round": 2,
+      "n": 100,
+      "labels": {
+        "Human": 81,
+        "AI": 17,
+        "Mixed": 2
+      },
+      "human_rate": 0.81,
+      "human_wilson95": [
+        0.7222115462093562,
+        0.8748524849023126
+      ],
+      "requested_words": 28000,
+      "output_words": 30722,
+      "charged_words": 28000,
+      "within_length": 62,
+      "quality_means": {
+        "adherence": 4.02,
+        "coherence": 3.53,
+        "development": 3.5
+      },
+      "quality_mean": 3.68,
+      "coherence_at_most_2": 8,
+      "median_latency_seconds": 17.29,
+      "versions": {
+        "4.0": 100
+      }
+    }
+  ],
+  "categories": [
     {
       "category": "Creative writing",
-      "planned": 10,
-      "generated": 10,
-      "detected": 10,
-      "human": 9,
-      "human_wilson95": [
-        0.5958499732047615,
-        0.9821237869049271
-      ],
+      "n": 20,
       "labels": {
-        "Human": 9,
-        "Mixed": 1
+        "Human": 18,
+        "Mixed": 1,
+        "AI": 1
       },
-      "within_length": 8,
-      "quality_mean": 3.2
+      "human_rate": 0.9,
+      "human_wilson95": [
+        0.6989663547715128,
+        0.9721335187862319
+      ],
+      "requested_words": 5600,
+      "output_words": 5833,
+      "charged_words": 5600,
+      "within_length": 15,
+      "quality_means": {
+        "adherence": 4.1,
+        "coherence": 2.8,
+        "development": 3.1
+      },
+      "quality_mean": 3.33,
+      "coherence_at_most_2": 7,
+      "median_latency_seconds": 18.84,
+      "versions": {
+        "4.0": 20
+      }
     },
     {
       "category": "Essays and humanities",
-      "planned": 10,
-      "generated": 10,
-      "detected": 10,
-      "human": 10,
-      "human_wilson95": [
-        0.7224672001371107,
-        0.9999999999999999
-      ],
+      "n": 20,
       "labels": {
-        "Human": 10
+        "Human": 18,
+        "AI": 2
       },
-      "within_length": 6,
-      "quality_mean": 3.17
+      "human_rate": 0.9,
+      "human_wilson95": [
+        0.6989663547715128,
+        0.9721335187862319
+      ],
+      "requested_words": 5600,
+      "output_words": 6292,
+      "charged_words": 5600,
+      "within_length": 12,
+      "quality_means": {
+        "adherence": 3.95,
+        "coherence": 2.95,
+        "development": 3.05
+      },
+      "quality_mean": 3.32,
+      "coherence_at_most_2": 6,
+      "median_latency_seconds": 19.215,
+      "versions": {
+        "4.0": 20
+      }
     },
     {
       "category": "Science and technology",
-      "planned": 10,
-      "generated": 10,
-      "detected": 10,
-      "human": 10,
-      "human_wilson95": [
-        0.7224672001371107,
-        0.9999999999999999
-      ],
+      "n": 20,
       "labels": {
-        "Human": 10
+        "Human": 19,
+        "AI": 1
       },
-      "within_length": 8,
-      "quality_mean": 4.3
+      "human_rate": 0.95,
+      "human_wilson95": [
+        0.763868806553258,
+        0.9911185511992047
+      ],
+      "requested_words": 5600,
+      "output_words": 6399,
+      "charged_words": 5600,
+      "within_length": 14,
+      "quality_means": {
+        "adherence": 4.4,
+        "coherence": 3.8,
+        "development": 3.95
+      },
+      "quality_mean": 4.05,
+      "coherence_at_most_2": 1,
+      "median_latency_seconds": 16.990000000000002,
+      "versions": {
+        "4.0": 20
+      }
     },
     {
       "category": "Business and workplace",
-      "planned": 10,
-      "generated": 10,
-      "detected": 10,
-      "human": 6,
-      "human_wilson95": [
-        0.31267376973365824,
-        0.8318196702937638
-      ],
+      "n": 20,
       "labels": {
-        "Human": 6,
+        "Human": 14,
         "Mixed": 2,
-        "AI": 2
+        "AI": 4
       },
-      "within_length": 6,
-      "quality_mean": 3.83
+      "human_rate": 0.7,
+      "human_wilson95": [
+        0.4810271816464765,
+        0.8545227551323956
+      ],
+      "requested_words": 5600,
+      "output_words": 6023,
+      "charged_words": 5600,
+      "within_length": 13,
+      "quality_means": {
+        "adherence": 3.75,
+        "coherence": 3.6,
+        "development": 3.45
+      },
+      "quality_mean": 3.6,
+      "coherence_at_most_2": 1,
+      "median_latency_seconds": 17.384999999999998,
+      "versions": {
+        "4.0": 20
+      }
     },
     {
       "category": "Journalism and commentary",
-      "planned": 10,
-      "generated": 10,
-      "detected": 10,
-      "human": 8,
-      "human_wilson95": [
-        0.49016247153664183,
-        0.9433178485456247
-      ],
+      "n": 20,
       "labels": {
-        "Mixed": 1,
-        "Human": 8,
-        "AI": 1
+        "Mixed": 2,
+        "Human": 14,
+        "AI": 4
       },
-      "within_length": 6,
-      "quality_mean": 3.37
+      "human_rate": 0.7,
+      "human_wilson95": [
+        0.4810271816464765,
+        0.8545227551323956
+      ],
+      "requested_words": 5600,
+      "output_words": 6104,
+      "charged_words": 5600,
+      "within_length": 14,
+      "quality_means": {
+        "adherence": 3.75,
+        "coherence": 3.5,
+        "development": 3.25
+      },
+      "quality_mean": 3.5,
+      "coherence_at_most_2": 3,
+      "median_latency_seconds": 18.97,
+      "versions": {
+        "4.0": 20
+      }
     },
     {
       "category": "Personal communication",
-      "planned": 10,
-      "generated": 10,
-      "detected": 10,
-      "human": 9,
-      "human_wilson95": [
-        0.5958499732047615,
-        0.9821237869049271
-      ],
+      "n": 20,
       "labels": {
-        "Human": 9,
-        "AI": 1
+        "Human": 16,
+        "AI": 4
       },
-      "within_length": 8,
-      "quality_mean": 3.77
+      "human_rate": 0.8,
+      "human_wilson95": [
+        0.5839825677481064,
+        0.919342337420202
+      ],
+      "requested_words": 5600,
+      "output_words": 5473,
+      "charged_words": 5600,
+      "within_length": 15,
+      "quality_means": {
+        "adherence": 4.25,
+        "coherence": 3.4,
+        "development": 3.6
+      },
+      "quality_mean": 3.75,
+      "coherence_at_most_2": 1,
+      "median_latency_seconds": 14.344999999999999,
+      "versions": {
+        "4.0": 20
+      }
     },
     {
       "category": "Education",
-      "planned": 10,
-      "generated": 10,
-      "detected": 10,
-      "human": 8,
-      "human_wilson95": [
-        0.49016247153664183,
-        0.9433178485456247
-      ],
+      "n": 20,
       "labels": {
-        "Human": 8,
-        "Mixed": 2
+        "Human": 15,
+        "Mixed": 2,
+        "AI": 3
       },
-      "within_length": 8,
-      "quality_mean": 3.83
+      "human_rate": 0.75,
+      "human_wilson95": [
+        0.531299122381256,
+        0.8881382985923343
+      ],
+      "requested_words": 5600,
+      "output_words": 6372,
+      "charged_words": 5600,
+      "within_length": 13,
+      "quality_means": {
+        "adherence": 4.15,
+        "coherence": 3.7,
+        "development": 3.75
+      },
+      "quality_mean": 3.87,
+      "coherence_at_most_2": 1,
+      "median_latency_seconds": 14.975000000000001,
+      "versions": {
+        "4.0": 20
+      }
     },
     {
       "category": "Marketing and product writing",
-      "planned": 10,
-      "generated": 10,
-      "detected": 10,
-      "human": 7,
-      "human_wilson95": [
-        0.39677814746114537,
-        0.8922087325936989
-      ],
+      "n": 20,
       "labels": {
-        "Mixed": 1,
-        "Human": 7,
-        "AI": 2
+        "Mixed": 2,
+        "Human": 15,
+        "AI": 3
       },
-      "within_length": 3,
-      "quality_mean": 3.67
+      "human_rate": 0.75,
+      "human_wilson95": [
+        0.531299122381256,
+        0.8881382985923343
+      ],
+      "requested_words": 5600,
+      "output_words": 5476,
+      "charged_words": 5600,
+      "within_length": 9,
+      "quality_means": {
+        "adherence": 4.05,
+        "coherence": 3.7,
+        "development": 3.5
+      },
+      "quality_mean": 3.75,
+      "coherence_at_most_2": 0,
+      "median_latency_seconds": 14.695,
+      "versions": {
+        "4.0": 20
+      }
     },
     {
       "category": "Practical guides and reviews",
-      "planned": 10,
-      "generated": 10,
-      "detected": 10,
-      "human": 10,
-      "human_wilson95": [
-        0.7224672001371107,
-        0.9999999999999999
-      ],
+      "n": 20,
       "labels": {
-        "Human": 10
+        "Human": 19,
+        "AI": 1
       },
-      "within_length": 8,
-      "quality_mean": 3.73
+      "human_rate": 0.95,
+      "human_wilson95": [
+        0.763868806553258,
+        0.9911185511992047
+      ],
+      "requested_words": 5600,
+      "output_words": 6131,
+      "charged_words": 5600,
+      "within_length": 13,
+      "quality_means": {
+        "adherence": 3.95,
+        "coherence": 3.7,
+        "development": 3.6
+      },
+      "quality_mean": 3.75,
+      "coherence_at_most_2": 1,
+      "median_latency_seconds": 17.54,
+      "versions": {
+        "4.0": 20
+      }
     },
     {
       "category": "Civic and community writing",
-      "planned": 10,
-      "generated": 10,
-      "detected": 10,
-      "human": 8,
-      "human_wilson95": [
-        0.49016247153664183,
-        0.9433178485456247
-      ],
+      "n": 20,
       "labels": {
         "AI": 2,
-        "Human": 8
+        "Human": 18
       },
-      "within_length": 9,
-      "quality_mean": 4.03
+      "human_rate": 0.9,
+      "human_wilson95": [
+        0.6989663547715128,
+        0.9721335187862319
+      ],
+      "requested_words": 5600,
+      "output_words": 5984,
+      "charged_words": 5600,
+      "within_length": 14,
+      "quality_means": {
+        "adherence": 4.2,
+        "coherence": 3.7,
+        "development": 3.95
+      },
+      "quality_mean": 3.95,
+      "coherence_at_most_2": 0,
+      "median_latency_seconds": 17.205,
+      "versions": {
+        "4.0": 20
+      }
     }
   ],
-  "coherence_at_most_2": 13,
-  "humanizer_flagged_documents": 6,
-  "estimated_pangram_bulk_usd": 13.76
+  "design_note": "Round 2 is an adaptive extension with new scenarios and some more explicit constraints, authored after observing round 1; not a blinded replication."
 }
