@@ -1,0 +1,802 @@
+[
+  {
+    "id": "W001",
+    "category": "Creative writing",
+    "subcategory": "Literary story",
+    "words": 500,
+    "prompt": "Write a story about a retired train conductor who finds an unclaimed suitcase. End with a difficult choice rather than a twist. Aim for 500 words.",
+    "sha256": "6e88ed589baa32ec83ae431a34c7c5d537ea9721fa500569196d0f9774381f49"
+  },
+  {
+    "id": "W002",
+    "category": "Creative writing",
+    "subcategory": "Mystery",
+    "words": 500,
+    "prompt": "Write a mystery set in a small bakery. A missing recipe is the central puzzle, and the solution should follow from clues in the story. Aim for 500 words.",
+    "sha256": "21d796738e3a784d97545ae8a11f21d1b89728257fceca7aa650ca32282ceb3a"
+  },
+  {
+    "id": "W003",
+    "category": "Creative writing",
+    "subcategory": "Science fiction",
+    "words": 300,
+    "prompt": "Write a science-fiction scene about a gardener on a space station where sunlight is rationed. Aim for 300 words.",
+    "sha256": "e1b3999a90991c7d93c0e32a279f38e5f2e00bfa1837ac2ef11e7769c0e2f288"
+  },
+  {
+    "id": "W004",
+    "category": "Creative writing",
+    "subcategory": "Fantasy",
+    "words": 300,
+    "prompt": "Write a fantasy story about a bridge that asks travelers for a memory instead of money. Aim for 300 words.",
+    "sha256": "1ff55d7b8c1c116e62620b4d8091bad324f29b1a7b8cd8f95da4cc888d964ac3"
+  },
+  {
+    "id": "W005",
+    "category": "Creative writing",
+    "subcategory": "Children's fiction",
+    "words": 200,
+    "prompt": "Write a story for children aged six to eight about a turtle who wants to learn to dance. Aim for 200 words.",
+    "sha256": "851e817f10a99a08cf60ad2930f40f22763546672fd0da6279414a95da6a0fbd"
+  },
+  {
+    "id": "W006",
+    "category": "Creative writing",
+    "subcategory": "Comedy",
+    "words": 200,
+    "prompt": "Write a funny account of someone trying to assemble a bookshelf with the wrong instructions. Aim for 200 words.",
+    "sha256": "d8a0bbceb6e37fd3f57a9ce09f4a53bd308d75777f8afadc4212a51f795837cc"
+  },
+  {
+    "id": "W007",
+    "category": "Creative writing",
+    "subcategory": "Dialogue",
+    "words": 150,
+    "prompt": "Write a scene entirely in dialogue between two siblings deciding what to do with their father's old chair. Aim for 150 words.",
+    "sha256": "2fec4465b566c900890a95365f3df43b1659e22e776ea19bb88b8da352c118ce"
+  },
+  {
+    "id": "W008",
+    "category": "Creative writing",
+    "subcategory": "Prose poem",
+    "words": 150,
+    "prompt": "Write a prose poem about a city market after everyone has gone home. Avoid rhyme. Aim for 150 words.",
+    "sha256": "9f01146218c1de0107cb68bca2f5a2a4eada831680d3fc4a30ce1731e87bb828"
+  },
+  {
+    "id": "W009",
+    "category": "Creative writing",
+    "subcategory": "Adventure",
+    "words": 300,
+    "prompt": "Write an adventure scene about three hikers escaping a gorge as the river rises. Give each hiker a useful role. Aim for 300 words.",
+    "sha256": "b7c2a27d7af360eea24f3f0093c8c29c57ead666667f439fa47d0ba0c92c36bb"
+  },
+  {
+    "id": "W010",
+    "category": "Creative writing",
+    "subcategory": "Historical fiction",
+    "words": 200,
+    "prompt": "Write a fictional scene set at a railway station in 1910, from the perspective of a woman arriving alone in a new town. Aim for 200 words.",
+    "sha256": "42d401e43dbb59c6528171acf887d3710b9011f46c7861670df872738fbb5308"
+  },
+  {
+    "id": "W011",
+    "category": "Essays and humanities",
+    "subcategory": "Gandhi history",
+    "words": 500,
+    "prompt": "Write an essay about Gandhi in South Africa, including his arrival, development of satyagraha, and limitations or controversies in his early views. Keep historical claims accurate. Aim for 500 words.",
+    "sha256": "cddb9471edd59b111e15e54d88b3028a3ebf7e981ac92c5cc6891e1a38cf6b70"
+  },
+  {
+    "id": "W012",
+    "category": "Essays and humanities",
+    "subcategory": "Printing history",
+    "words": 500,
+    "prompt": "Write an essay explaining how printing changed the circulation of ideas in early modern Europe. Avoid presenting printing as the sole cause of social change. Aim for 500 words.",
+    "sha256": "9606e399b7be5b871f7b69e70f831a73f08448845ffd44e32c4d75b8fd1844b1"
+  },
+  {
+    "id": "W013",
+    "category": "Essays and humanities",
+    "subcategory": "Ethics argument",
+    "words": 300,
+    "prompt": "Write an essay arguing whether keeping a promise is always the right thing to do. Include a serious counterargument. Aim for 300 words.",
+    "sha256": "64f03d9c39013f2115b6bcf7769d63cc837114d6f9139d817a9e10e4aae95a7b"
+  },
+  {
+    "id": "W014",
+    "category": "Essays and humanities",
+    "subcategory": "Literary analysis",
+    "words": 300,
+    "prompt": "Explain how the creature in Mary Shelley's Frankenstein complicates the idea of who the real monster is. Do not invent quotations. Aim for 300 words.",
+    "sha256": "7167920ff3dc6fea7094289009c56021bc1e624d7287a432fb8edfcc19b0f7f3"
+  },
+  {
+    "id": "W015",
+    "category": "Essays and humanities",
+    "subcategory": "Art interpretation",
+    "words": 200,
+    "prompt": "Explain to a general reader why an abstract painting can be meaningful without depicting recognizable objects. Aim for 200 words.",
+    "sha256": "ea278e959f2edbc450bb87fb80dbe3460549939deeda4e0c1a175908a38f8acf"
+  },
+  {
+    "id": "W016",
+    "category": "Essays and humanities",
+    "subcategory": "Language essay",
+    "words": 200,
+    "prompt": "Write a short essay on what can be lost and gained when a poem is translated. Aim for 200 words.",
+    "sha256": "bbb8c073581250007b1443e7d687718c338745ee95cef7adfdff9edd695e3f5a"
+  },
+  {
+    "id": "W017",
+    "category": "Essays and humanities",
+    "subcategory": "Philosophy vignette",
+    "words": 150,
+    "prompt": "Explain the difference between being alone and feeling lonely without treating either experience as universal. Aim for 150 words.",
+    "sha256": "a11dc2a373c29f350f91c9eb1df536271e8d93fddfd063f58a8bae029bcd1a17"
+  },
+  {
+    "id": "W018",
+    "category": "Essays and humanities",
+    "subcategory": "Historical source reading",
+    "words": 150,
+    "prompt": "Explain why a merchant's account book can be valuable to historians even when it says little about ordinary workers. Aim for 150 words.",
+    "sha256": "a7b881c17a4fd1ca2949a8db522a252895d237ff5050c2ae64079b68a80c6feb"
+  },
+  {
+    "id": "W019",
+    "category": "Essays and humanities",
+    "subcategory": "Cultural criticism",
+    "words": 300,
+    "prompt": "Write a balanced essay on whether museums should display replicas alongside original objects. Aim for 300 words.",
+    "sha256": "00f89fb45ee435204dc9a7e93f614e8a18371ad239277a5971392ce13b142852"
+  },
+  {
+    "id": "W020",
+    "category": "Essays and humanities",
+    "subcategory": "Memory reflection",
+    "words": 200,
+    "prompt": "Write a reflective essay about why ordinary household objects can become important family possessions. Aim for 200 words.",
+    "sha256": "61291548fa4eba60bd47fb9538c76e8284244d8882b275d90f2f5294b337273c"
+  },
+  {
+    "id": "W021",
+    "category": "Science and technology",
+    "subcategory": "Climate explainer",
+    "words": 500,
+    "prompt": "Explain the greenhouse effect, distinguishing it from ozone depletion and from short-term weather variation. Write for a curious adult. Aim for 500 words.",
+    "sha256": "a559bdfb84cd7d1b5de21e83bfeb8d321a35d23afc08b34a9ccc933251c4248e"
+  },
+  {
+    "id": "W022",
+    "category": "Science and technology",
+    "subcategory": "Machine learning",
+    "words": 500,
+    "prompt": "Explain how a machine-learning model can perform well on training data and poorly on new data. Use a concrete example and discuss overfitting and data leakage. Aim for 500 words.",
+    "sha256": "eea84c0edae830c441e43c62950cd8fae019736bd16b962bc3da4b72912c033f"
+  },
+  {
+    "id": "W023",
+    "category": "Science and technology",
+    "subcategory": "Biology",
+    "words": 300,
+    "prompt": "Explain natural selection using antibiotic resistance as an example. Distinguish selection from organisms changing because they need to. Aim for 300 words.",
+    "sha256": "4f6ca1f4686ee1afcc2027d0e6ba1781f8bb5bb816259e6df8b0bbbd1a941a30"
+  },
+  {
+    "id": "W024",
+    "category": "Science and technology",
+    "subcategory": "Astronomy",
+    "words": 300,
+    "prompt": "Explain why the Moon has phases and why they are not usually caused by Earth's shadow. Aim for 300 words.",
+    "sha256": "127b936da5ef795b3296482fdac5885f409524290952965b30ba487bb11aafb3"
+  },
+  {
+    "id": "W025",
+    "category": "Science and technology",
+    "subcategory": "Physics",
+    "words": 200,
+    "prompt": "Explain why a metal spoon feels colder than a wooden spoon in the same room. Aim for 200 words.",
+    "sha256": "88dbec7f55b2e828077342999ebef48a158b62bbc8ddaded805d55b9a70eef50"
+  },
+  {
+    "id": "W026",
+    "category": "Science and technology",
+    "subcategory": "Statistics",
+    "words": 200,
+    "prompt": "Explain mean and median using the numbers 2, 3, 3, 4, and 13, and show why the distinction matters. Aim for 200 words.",
+    "sha256": "781d982903818aa65b125a54a10748b6111dfb1f59e64f72a238e83d1efe3a25"
+  },
+  {
+    "id": "W027",
+    "category": "Science and technology",
+    "subcategory": "Computing",
+    "words": 150,
+    "prompt": "Explain what a computer cache does using an everyday analogy, then mention one way the analogy is imperfect. Aim for 150 words.",
+    "sha256": "730c0d6b51152e87b6c28b405ea43afa40dbe7844ddc7d3f840e4dea6f031876"
+  },
+  {
+    "id": "W028",
+    "category": "Science and technology",
+    "subcategory": "Ecology",
+    "words": 150,
+    "prompt": "Explain why counting planted trees is not the same as measuring a successful urban forest. Aim for 150 words.",
+    "sha256": "869736e673808f510d0d3ef6fa3b05455c8801fa3492d8bcaec64fc813eef90d"
+  },
+  {
+    "id": "W029",
+    "category": "Science and technology",
+    "subcategory": "Research design",
+    "words": 300,
+    "prompt": "Describe a fair experiment to test whether moving recycling signs closer to bins improves sorting. Include a limitation. Aim for 300 words.",
+    "sha256": "ada311a7d311a3dcd086170f46c3809b8350154c8b964a1c5989ea2ebe132466"
+  },
+  {
+    "id": "W030",
+    "category": "Science and technology",
+    "subcategory": "Scientific uncertainty",
+    "words": 200,
+    "prompt": "Explain the difference between an absence of evidence and evidence of absence with a practical example. Aim for 200 words.",
+    "sha256": "d03aff1e1f574e80e72b6e236f2ad4e2111c8174082b392f479eb1b2658ce654"
+  },
+  {
+    "id": "W031",
+    "category": "Business and workplace",
+    "subcategory": "Strategy memo",
+    "words": 500,
+    "prompt": "Write a memo for a small repair shop considering evening appointments versus a second location. Recommend a reversible test and explain how to measure it. Aim for 500 words.",
+    "sha256": "c5e43a4d5a7609ea15f443571b3e3e8ddaf8c507efee0c3677eadcc1d04542c9"
+  },
+  {
+    "id": "W032",
+    "category": "Business and workplace",
+    "subcategory": "Project proposal",
+    "words": 500,
+    "prompt": "Propose a six-week pilot for a shared equipment booking system at a makerspace. Cover scope, responsibilities, success measures, and risks. Aim for 500 words.",
+    "sha256": "f359f2b5e0518fee734726aba31ce1003bf5244c3b200e3ffa0c35bccb8175bb"
+  },
+  {
+    "id": "W033",
+    "category": "Business and workplace",
+    "subcategory": "Incident report",
+    "words": 300,
+    "prompt": "Write a fictional incident report about duplicate booking emails caused by a retry bug. No bookings or charges were duplicated. Include timeline, cause, and prevention. Aim for 300 words.",
+    "sha256": "2586f7394a73591317da9532a9beddc4ae16997539d65a28258675a1321bfee8"
+  },
+  {
+    "id": "W034",
+    "category": "Business and workplace",
+    "subcategory": "Hiring description",
+    "words": 300,
+    "prompt": "Write a realistic job description for an operations coordinator at a small equipment rental business. Prior experience should be helpful but not required. Aim for 300 words.",
+    "sha256": "ec7d79ed717c894d7dacdda173290028c533d81d0e7cd8899e0eba0b29fa9624"
+  },
+  {
+    "id": "W035",
+    "category": "Business and workplace",
+    "subcategory": "Customer apology",
+    "words": 200,
+    "prompt": "Write an apology email to a customer whose replacement desk arrived without mounting brackets. The missing parts will ship tomorrow at no charge. Aim for 200 words.",
+    "sha256": "828ad4fc9e57e33e4c08931fbc9f809dc0913a4cfbba985eedbd23f36598e728"
+  },
+  {
+    "id": "W036",
+    "category": "Business and workplace",
+    "subcategory": "Performance feedback",
+    "words": 200,
+    "prompt": "Write constructive feedback for an analyst whose reports are accurate but who gives late notice of delays. Include a clear next step. Aim for 200 words.",
+    "sha256": "0c2d4efe49cb38a49f4078b807adb63d89dd9c879c985c4589b0dc4b69e72d2d"
+  },
+  {
+    "id": "W037",
+    "category": "Business and workplace",
+    "subcategory": "Meeting summary",
+    "words": 150,
+    "prompt": "Summarize a fictional meeting where a team agrees to test one onboarding email instead of three, while leaving reminder timing unchanged. Aim for 150 words.",
+    "sha256": "e7c23df9b3f9ed752cdf48437837ef6695bb72bd46980d7a1a2308e6fd093c39"
+  },
+  {
+    "id": "W038",
+    "category": "Business and workplace",
+    "subcategory": "Status update",
+    "words": 150,
+    "prompt": "Write a project update: warehouse label pilot begins Monday; six shelf mismatches remain; old codes stay visible during a five-day trial. Aim for 150 words.",
+    "sha256": "2db9cd515ae433e19769c1573728e21cc05f7b186f99bd1bdd71073d6a71dd2e"
+  },
+  {
+    "id": "W039",
+    "category": "Business and workplace",
+    "subcategory": "Procurement analysis",
+    "words": 300,
+    "prompt": "Compare buying a cheaper scanner with testing a more expensive one. Discuss total cost and real-world performance without inventing vendor specifications. Aim for 300 words.",
+    "sha256": "c172b166a958b992b8128588488549e701648d162052a41ed915aefa4c435a90"
+  },
+  {
+    "id": "W040",
+    "category": "Business and workplace",
+    "subcategory": "Internal policy",
+    "words": 200,
+    "prompt": "Explain a new meeting-room rule: release reservations after ten minutes unless checked in; exempt accessibility arrangements and scheduled maintenance. Aim for 200 words.",
+    "sha256": "343b451c7f480112f1165f3a6cd68d6d6818c3ea51e96f6d641fd489e535668e"
+  },
+  {
+    "id": "W041",
+    "category": "Journalism and commentary",
+    "subcategory": "Reported feature",
+    "words": 500,
+    "prompt": "Write a clearly fictional feature about a monthly neighborhood repair cafe. Use invented named characters and show both its benefits and limits. Aim for 500 words.",
+    "sha256": "436f1ecc7f28e8df1c2d3da66315296e7250dfd64ec0407bbb2a8ce13b5677ab"
+  },
+  {
+    "id": "W042",
+    "category": "Journalism and commentary",
+    "subcategory": "Investigative explainer",
+    "words": 500,
+    "prompt": "Explain how changing budget categories can make public spending appear to double. Use a clearly hypothetical numerical example and distinguish recurring from one-time costs. Aim for 500 words.",
+    "sha256": "08a80c47eea963179a0034eb7bd0d670f1538284236acbdab8ca5c2b48b6ca08"
+  },
+  {
+    "id": "W043",
+    "category": "Journalism and commentary",
+    "subcategory": "Local news",
+    "words": 300,
+    "prompt": "Write a fictional local news article about a public pool reopening after six weeks of repairs. Hours are limited by lifeguard shortages; pass holders receive extensions. Aim for 300 words.",
+    "sha256": "a2961f65942d110fd975426a8cf91c3a4a510f966b38ca556fd853657f55ed8d"
+  },
+  {
+    "id": "W044",
+    "category": "Journalism and commentary",
+    "subcategory": "Profile",
+    "words": 300,
+    "prompt": "Write a fictional profile of a watch repairer who values explaining uncertainty to customers. Include specific scenes without making the subject flawless. Aim for 300 words.",
+    "sha256": "50d33ce2252fbd15d306f879c09f7a4a6f5753715f7a6de82beff8ffc6a1d845"
+  },
+  {
+    "id": "W045",
+    "category": "Journalism and commentary",
+    "subcategory": "Editorial",
+    "words": 200,
+    "prompt": "Write an editorial arguing that transit agencies should explain route changes in plain language and evaluate the changes afterward. Aim for 200 words.",
+    "sha256": "90a46dfdf96b123db49ce521a1cdac8cc14274a520158d667237b12d77f33280"
+  },
+  {
+    "id": "W046",
+    "category": "Journalism and commentary",
+    "subcategory": "Arts review",
+    "words": 200,
+    "prompt": "Review an imaginary exhibition of photographs taken in homes just before their occupants move. Include one criticism as well as praise. Aim for 200 words.",
+    "sha256": "88e7bb8085630f2aa4c321a4e2a1fd35ed5ea5baf6a95bfa7e2e8ded0bff41ba"
+  },
+  {
+    "id": "W047",
+    "category": "Journalism and commentary",
+    "subcategory": "Sports report",
+    "words": 150,
+    "prompt": "Write a fictional match report: Northbank beats Westfield 2–1; Westfield scores first; Northbank's winner comes in the 83rd minute. Aim for 150 words.",
+    "sha256": "a58599b4d22cc9100129c41bb710748af786aa0cbfd080d1de07a55ec50f551d"
+  },
+  {
+    "id": "W048",
+    "category": "Journalism and commentary",
+    "subcategory": "Public notice",
+    "words": 150,
+    "prompt": "Write a news brief about a fictional community center entrance closing Monday through Wednesday. Visitors should use the step-free Willow Lane entrance. Aim for 150 words.",
+    "sha256": "54966ab3055ddc66f91eb9109ca80797a97472486ff87062b67d4b6b94194f50"
+  },
+  {
+    "id": "W049",
+    "category": "Journalism and commentary",
+    "subcategory": "Interview Q&A",
+    "words": 300,
+    "prompt": "Write a fictional Q&A with a community librarian about the value of libraries beyond borrowing books. Include one challenging question. Aim for 300 words.",
+    "sha256": "f9b61847c270225cbd57b8e6ad0e30f74d1932f0e4d7f504e4a1ae6d35365c01"
+  },
+  {
+    "id": "W050",
+    "category": "Journalism and commentary",
+    "subcategory": "Opinion column",
+    "words": 200,
+    "prompt": "Write a nuanced column about the pressure to turn every hobby into an income source. Aim for 200 words.",
+    "sha256": "5a1b9713bf769352b9dccf59d3549ea659bae660cad8f31b6080105517f3260a"
+  },
+  {
+    "id": "W051",
+    "category": "Personal communication",
+    "subcategory": "Travel narrative",
+    "words": 500,
+    "prompt": "Write a first-person travel narrative in which a missed express bus leads to a memorable local journey, but the destination is obscured by clouds. Aim for 500 words.",
+    "sha256": "a3ebc5c5afafdf4446ec4af1d9f21e1232f2de8e8e51cb5757990acf01be94c0"
+  },
+  {
+    "id": "W052",
+    "category": "Personal communication",
+    "subcategory": "Personal statement",
+    "words": 500,
+    "prompt": "Write a fictional personal statement for a museum studies applicant whose volunteering taught them the value of careful documentation and acknowledging uncertainty. Aim for 500 words.",
+    "sha256": "367f0a568c94256e5497692377136fc136d6a53464f0362648fd48c178ef21c4"
+  },
+  {
+    "id": "W053",
+    "category": "Personal communication",
+    "subcategory": "Learning reflection",
+    "words": 300,
+    "prompt": "Write a personal reflection on learning to draw and becoming more comfortable with mistakes. Use a specific incident rather than generic encouragement. Aim for 300 words.",
+    "sha256": "37fa436a43924ac85bbb6aa6af576214ca73e5bf4fc22a5255a65980335d44dc"
+  },
+  {
+    "id": "W054",
+    "category": "Personal communication",
+    "subcategory": "Family anecdote",
+    "words": 300,
+    "prompt": "Write a warm family anecdote about a grandfather who labels every jar in his shed, including one containing parts of a long-gone bicycle. Aim for 300 words.",
+    "sha256": "a78885826b140bddefcf16e648b34f052856a27f780971bf11d729efe8dc6cf3"
+  },
+  {
+    "id": "W055",
+    "category": "Personal communication",
+    "subcategory": "Gratitude letter",
+    "words": 200,
+    "prompt": "Write a thank-you letter to a friend who helped with a difficult move and left a meal in the refrigerator. Aim for 200 words.",
+    "sha256": "848fc53efafc57916be2214a21fde20995701e72e97e870dba3fac8fd0a95d71"
+  },
+  {
+    "id": "W056",
+    "category": "Personal communication",
+    "subcategory": "Complaint email",
+    "words": 200,
+    "prompt": "Write a firm but polite complaint about a missed Friday delivery window and an incorrect attempted-delivery status. Ask for a practical resolution. Aim for 200 words.",
+    "sha256": "150134597888cd962a4ccc2430a6b4355654dd5e7399932a73438e8306a9dc62"
+  },
+  {
+    "id": "W057",
+    "category": "Personal communication",
+    "subcategory": "Invitation",
+    "words": 150,
+    "prompt": "Invite neighbors to a free Saturday walk, meeting at ten for about one hour. No registration; heavy rain means tea inside the community hall. Aim for 150 words.",
+    "sha256": "ac545eb150ff99703c265ce7cf4b6db0a472c7071d719a0593d6895b0f912689"
+  },
+  {
+    "id": "W058",
+    "category": "Personal communication",
+    "subcategory": "Condolence message",
+    "words": 150,
+    "prompt": "Write a sincere condolence message to a friend whose grandmother died. Avoid religious assumptions and claims that you know exactly how they feel. Aim for 150 words.",
+    "sha256": "4f364c9cfba06966aee95229a09cb01022ba306be8f268537416651ae820e8d6"
+  },
+  {
+    "id": "W059",
+    "category": "Personal communication",
+    "subcategory": "Diary entry",
+    "words": 300,
+    "prompt": "Write a diary entry about finally clearing a cluttered desk and discovering that the main benefit is a place to rest rather than greater productivity. Aim for 300 words.",
+    "sha256": "13f4b4e14575678b736caa7d31a3f127596628a45223bae4ccf57a705d162dd9"
+  },
+  {
+    "id": "W060",
+    "category": "Personal communication",
+    "subcategory": "Forum post",
+    "words": 200,
+    "prompt": "Ask an online forum for advice on sharing one small workshop between sewing, model making, and general crafts. There is no space for another large table. Aim for 200 words.",
+    "sha256": "182ef3c43a55a52d6d31b4f08b89b034a6876daabe3d23c0ad9f9d506d916bfd"
+  },
+  {
+    "id": "W061",
+    "category": "Education",
+    "subcategory": "Lesson plan",
+    "words": 500,
+    "prompt": "Write a 45-minute lesson plan for twelve-year-olds on distinguishing observation from inference using a closed box. Include timings and an assessment activity. Aim for 500 words.",
+    "sha256": "47703cc77d6fd359b756d8d09118ba1410fcb47b28ed845e382605a6869f4643"
+  },
+  {
+    "id": "W062",
+    "category": "Education",
+    "subcategory": "Study guide",
+    "words": 500,
+    "prompt": "Write a practical study guide for students preparing for exams that require explanations. Include retrieval practice, spacing, and a realistic weekly example. Aim for 500 words.",
+    "sha256": "9cad1ea11d9ad8c9f63a0234cbd45ff239af094b4c76cce27675d2b6212763c6"
+  },
+  {
+    "id": "W063",
+    "category": "Education",
+    "subcategory": "Classroom debate",
+    "words": 300,
+    "prompt": "Write a balanced argument about letting students choose between an essay, presentation, and model when demonstrating learning. Explain when choice is inappropriate. Aim for 300 words.",
+    "sha256": "805563f604c6954e43cc0600ac76b3bf22b24e8598e9a6835666989060402236"
+  },
+  {
+    "id": "W064",
+    "category": "Education",
+    "subcategory": "Museum interpretation",
+    "words": 300,
+    "prompt": "Write an interpretive label for a fictional early-twentieth-century worker's wooden lunch box. Distinguish observable evidence from things we cannot know. Aim for 300 words.",
+    "sha256": "cc301b7408ab18e358e10b174a645437be99df8c587e18b5c7ab434cd5c85db8"
+  },
+  {
+    "id": "W065",
+    "category": "Education",
+    "subcategory": "Student feedback",
+    "words": 200,
+    "prompt": "Give feedback on a student argument for two extra library hours each weekday. Praise its focus, ask for relevant evidence, and explain why weekend access belongs elsewhere. Aim for 200 words.",
+    "sha256": "e9f4e9874db333864de682015ff612480ac7416695c2df48486afced88e502fa"
+  },
+  {
+    "id": "W066",
+    "category": "Education",
+    "subcategory": "Parent newsletter",
+    "words": 200,
+    "prompt": "Write a parent newsletter about a primary-school project on material properties. Bringing an object is optional; no purchases, glass, sharp tools, or valuables. Aim for 200 words.",
+    "sha256": "09da2cedd8c665dc5f0d5c5bf8aad401785d052bb018cf400633ffb361d430ab"
+  },
+  {
+    "id": "W067",
+    "category": "Education",
+    "subcategory": "Child-friendly explanation",
+    "words": 150,
+    "prompt": "Explain how maps use symbols and omit details to an eight-year-old, including why different maps of the same place can be useful. Aim for 150 words.",
+    "sha256": "a91415439b318071552bbf32e6a75a7a701aa238355464864b654498d8121f2d"
+  },
+  {
+    "id": "W068",
+    "category": "Education",
+    "subcategory": "Assignment brief",
+    "words": 150,
+    "prompt": "Write a clear assignment asking students to compare two accounts of the same event and explain disagreements using evidence. Aim for 150 words.",
+    "sha256": "0414971865c4bb91ab2ca35a701dac39539b958ce363cecfe75b57efa8262799"
+  },
+  {
+    "id": "W069",
+    "category": "Education",
+    "subcategory": "Assessment rubric",
+    "words": 300,
+    "prompt": "Write a presentation rubric prioritizing claim, evidence, and reasoning over visual polish. Do not penalize nervousness by itself. Aim for 300 words.",
+    "sha256": "f24355fbfa6cd14df094bbe5d53f93fcb14e2bf223aec18d8234976d7b333ab3"
+  },
+  {
+    "id": "W070",
+    "category": "Education",
+    "subcategory": "Teaching reflection",
+    "words": 200,
+    "prompt": "Write a teacher's reflection on a group activity that was lively but did not clearly demonstrate learning. Suggest a specific improvement. Aim for 200 words.",
+    "sha256": "cf4d2c73d3a98fc3b2ead89d2494ec38193ea1fee2d5cf887265e61c2da88214"
+  },
+  {
+    "id": "W071",
+    "category": "Marketing and product writing",
+    "subcategory": "Product launch plan",
+    "words": 500,
+    "prompt": "Write a launch plan for a fictional compact reading lamp with a physical switch and replaceable bulb. Avoid unsupported performance claims. Aim for 500 words.",
+    "sha256": "c67c03787a56c2e8a5cdf03cfe843c99ff8dc51a94b4998192191b9a5950c1d4"
+  },
+  {
+    "id": "W072",
+    "category": "Marketing and product writing",
+    "subcategory": "Brand story",
+    "words": 500,
+    "prompt": "Write a believable brand story for a fictional notebook company founded because attractive notebooks would not lie flat. Avoid claiming notebooks transform lives. Aim for 500 words.",
+    "sha256": "dde15cdaceb58e685ac433ca6fd3f9b48bc7d8c5025ec8d1fa4e1506a231922b"
+  },
+  {
+    "id": "W073",
+    "category": "Marketing and product writing",
+    "subcategory": "Case study",
+    "words": 300,
+    "prompt": "Write a clearly fictional case study about a makers club trialing shared booking software for two workstations. Include a limitation and an adoption difficulty. Aim for 300 words.",
+    "sha256": "ad2f86c01494d4edb185e9ad6c907ba4ac17b6724c9ca8d833de433b85f7e4d2"
+  },
+  {
+    "id": "W074",
+    "category": "Marketing and product writing",
+    "subcategory": "Landing page",
+    "words": 300,
+    "prompt": "Write landing-page copy for a fictional service that helps small community groups schedule volunteer shifts. Explain value clearly without promising perfect outcomes. Aim for 300 words.",
+    "sha256": "1ffbfa9995128293f4c50b8301e5440a41fafd3914889e5109c027534e1c8225"
+  },
+  {
+    "id": "W075",
+    "category": "Marketing and product writing",
+    "subcategory": "Product description",
+    "words": 200,
+    "prompt": "Describe a fictional folding desk organizer with three compartments and a removable tray. Be clear about its limited storage capacity. Aim for 200 words.",
+    "sha256": "e89dee2cf979136796b556f9c8e05cc873d8e1137ee07ef36e03c2c6d0f5a165"
+  },
+  {
+    "id": "W076",
+    "category": "Marketing and product writing",
+    "subcategory": "Welcome email",
+    "words": 200,
+    "prompt": "Write a welcome email for a monthly gardening newsletter aimed at people with small spaces. Include what to expect and a simple first activity. Aim for 200 words.",
+    "sha256": "878006f091d6b891aff605b999418b40fad4d9e9be1e9e7459bfc051f85b5e60"
+  },
+  {
+    "id": "W077",
+    "category": "Marketing and product writing",
+    "subcategory": "Event promotion",
+    "words": 150,
+    "prompt": "Promote a two-hour beginner bookbinding workshop. Materials are included, places require reservation, and large machines are operated by staff only. Aim for 150 words.",
+    "sha256": "11634e29063b912c2074df87730dc8c97e4b9cd72e4630e9e69afde5d9239d37"
+  },
+  {
+    "id": "W078",
+    "category": "Marketing and product writing",
+    "subcategory": "Survey invitation",
+    "words": 150,
+    "prompt": "Invite customers to a three-minute survey about Saturday opening hours. Make clear that responses inform but do not guarantee changes. Aim for 150 words.",
+    "sha256": "10c57c0355ab69ae370b0c89facee30fd2a081d7f905313512c7630594fe93aa"
+  },
+  {
+    "id": "W079",
+    "category": "Marketing and product writing",
+    "subcategory": "Comparison copy",
+    "words": 300,
+    "prompt": "Compare pocket and large sketchbooks made with identical paper and binding. Explain tradeoffs without claiming one is universally better. Aim for 300 words.",
+    "sha256": "1302391b15c62b1a15c7aadb56e6ba0d3b65e88795509d845e3e8b35dbf2e5f2"
+  },
+  {
+    "id": "W080",
+    "category": "Marketing and product writing",
+    "subcategory": "Fundraising appeal",
+    "words": 200,
+    "prompt": "Write an appeal for six replacement tables for a community room. Promise to publish the invoice and explain surplus use; donations do not affect access. Aim for 200 words.",
+    "sha256": "13310acd9282208aa5ce731a483061745b3be4b297c7d3366c53508ea2cc7a90"
+  },
+  {
+    "id": "W081",
+    "category": "Practical guides and reviews",
+    "subcategory": "Travel packing",
+    "words": 500,
+    "prompt": "Write a practical guide to packing for a five-day trip with one small bag, including choosing clothes and avoiding unnecessary duplicates. Aim for 500 words.",
+    "sha256": "8472d60ae06352d29d3798ddd6bef6b536d429a8c4f7c6ff499ac0f8eb71fb5d"
+  },
+  {
+    "id": "W082",
+    "category": "Practical guides and reviews",
+    "subcategory": "Photography tutorial",
+    "words": 500,
+    "prompt": "Explain how a beginner can photograph a household object using window light and a sheet of white card. Include common mistakes and how to check the result. Aim for 500 words.",
+    "sha256": "1c1982928a9bc011f5cef21bf165f3137b048af7555a7ba0a82fc4ae1102ba5b"
+  },
+  {
+    "id": "W083",
+    "category": "Practical guides and reviews",
+    "subcategory": "Gardening guide",
+    "words": 300,
+    "prompt": "Explain how to assess sunlight, wind, and drainage before starting a balcony garden. Avoid prescribing one watering schedule for every plant. Aim for 300 words.",
+    "sha256": "0b832744d38d069077c060f41a3a072ccd459839054fa67d501c8e03fea469f2"
+  },
+  {
+    "id": "W084",
+    "category": "Practical guides and reviews",
+    "subcategory": "Home organization",
+    "words": 300,
+    "prompt": "Write an entryway organization guide for a shared household, focusing on real habits rather than maintaining a perfect appearance. Aim for 300 words.",
+    "sha256": "a0265876c59548959b97c10aecbb7b17c60cf6eba6529cb9f926ecc533eef1f0"
+  },
+  {
+    "id": "W085",
+    "category": "Practical guides and reviews",
+    "subcategory": "Cooking method",
+    "words": 200,
+    "prompt": "Explain how to roast mixed vegetables, accounting for different cooking rates, overcrowding, and how to judge doneness. Aim for 200 words.",
+    "sha256": "e69dc097f47c2424081847553cde0af9aa8139b996b640a202f74b56ed8fe603"
+  },
+  {
+    "id": "W086",
+    "category": "Practical guides and reviews",
+    "subcategory": "Product review",
+    "words": 200,
+    "prompt": "Write a clearly fictional review of a travel mug used for two weeks: comfortable grip and useful size, but a lid groove that is hard to clean. Do not invent lab measurements. Aim for 200 words.",
+    "sha256": "72a69fae28ce78c3752aa91f2c9e7377db43c3bc45176d62605aca49974e680e"
+  },
+  {
+    "id": "W087",
+    "category": "Practical guides and reviews",
+    "subcategory": "Craft directions",
+    "words": 150,
+    "prompt": "Explain how to make a paper accordion with evenly spaced alternating folds. Include one troubleshooting tip. Aim for 150 words.",
+    "sha256": "9e3438ce10ea17a96dd4130178cd9e756f12dfd0db22f93bbe11a9fb13ea4f88"
+  },
+  {
+    "id": "W088",
+    "category": "Practical guides and reviews",
+    "subcategory": "Troubleshooting",
+    "words": 150,
+    "prompt": "Explain what to check when a shared printer accepts a job but produces no pages, and why repeatedly resubmitting can cause problems. Aim for 150 words.",
+    "sha256": "0a0c85eea6cde437d163b6650500a05d4eb0c9114456776d1259415975982c2a"
+  },
+  {
+    "id": "W089",
+    "category": "Practical guides and reviews",
+    "subcategory": "Repair decision",
+    "words": 300,
+    "prompt": "Write a balanced guide to deciding whether to repair or replace an ordinary household object. Discuss uncertainty and usefulness, not just purchase price. Aim for 300 words.",
+    "sha256": "0b2b1108f6ade0f0fd24a5ebfc02fb2d43798ccdd3cc8701777ac12387198404"
+  },
+  {
+    "id": "W090",
+    "category": "Practical guides and reviews",
+    "subcategory": "Beginner hobby",
+    "words": 200,
+    "prompt": "Give a beginner advice on starting a small stamp collection, recording uncertainty, and avoiding the assumption that age alone determines value. Aim for 200 words.",
+    "sha256": "dee9cf83fb27896575069dda710b385906fb88338860bdc58bf77c9dffb1a339"
+  },
+  {
+    "id": "W091",
+    "category": "Civic and community writing",
+    "subcategory": "Policy brief",
+    "words": 500,
+    "prompt": "Write a policy brief proposing a six-week evening-library-hours trial. Assess new access, costs, and displacement of daytime services rather than just visitor counts. Aim for 500 words.",
+    "sha256": "44643abb9568dabc8cdef00a4c0fc79eb98d95a37bc717246c54b6008aed6082"
+  },
+  {
+    "id": "W092",
+    "category": "Civic and community writing",
+    "subcategory": "Evaluation summary",
+    "words": 500,
+    "prompt": "Evaluate a fictional four-week community shuttle pilot with 480 passenger journeys and high use on market mornings. Costs exceeded estimates; avoided car trips were not measured. Aim for 500 words.",
+    "sha256": "dbacad540cd1c028ddb6eb1f1805ffb1e9f2de2c7811dc7fa961364daf7b3fb6"
+  },
+  {
+    "id": "W093",
+    "category": "Civic and community writing",
+    "subcategory": "Consultation response",
+    "words": 300,
+    "prompt": "Respond to a proposal to add benches to a town square. Support the aim but request a temporary layout trial and clear maintenance responsibilities. Aim for 300 words.",
+    "sha256": "97b75092ad9a4becf8f9e66555d53fb0b5eb185edfe975fd36ee574f67ce8217"
+  },
+  {
+    "id": "W094",
+    "category": "Civic and community writing",
+    "subcategory": "Accessibility review",
+    "words": 300,
+    "prompt": "Write a fictional accessibility review of a step-free hall with obstructive chair storage, unclear signs, and staff unfamiliar with hearing equipment. A single visit is not certification. Aim for 300 words.",
+    "sha256": "67271d8be2d482594c7da67b21c52da553f8baad437b891db687a15e4630b660"
+  },
+  {
+    "id": "W095",
+    "category": "Civic and community writing",
+    "subcategory": "Public speech",
+    "words": 200,
+    "prompt": "Write a short public-meeting speech asking for quieter play options and shaded seating in a new playground, without opposing replacement of worn equipment. Aim for 200 words.",
+    "sha256": "d7c48e7921cea72cebfd4c6fc5c0e10b5b1f14d37d2c18b5223f85c7bf8fbf35"
+  },
+  {
+    "id": "W096",
+    "category": "Civic and community writing",
+    "subcategory": "Budget explanation",
+    "words": 200,
+    "prompt": "Explain a community garden budget's distinction between operating costs, one-time improvements, expected donations, and reserves. Aim for 200 words.",
+    "sha256": "f179ef2646b0bd8d71372bded4780e1305182778a4cedda518943b47fd9e543a"
+  },
+  {
+    "id": "W097",
+    "category": "Civic and community writing",
+    "subcategory": "Volunteer orientation",
+    "words": 150,
+    "prompt": "Welcome reading-room volunteers and explain referring unknown questions to a coordinator, respecting visitors, and making concise handovers. Aim for 150 words.",
+    "sha256": "5d2af96361a2510ed3f9363606c59e9dd21de98759fdb03fa85393622652d413"
+  },
+  {
+    "id": "W098",
+    "category": "Civic and community writing",
+    "subcategory": "Service update",
+    "words": 150,
+    "prompt": "Explain that a fictional tool library is changing its opening hours for a four-week trial and wants feedback from both users and people unable to attend. Aim for 150 words.",
+    "sha256": "07a3ee6c6cf61efec284b1960bd8267398c8ce6e25727555f6b1c84ba4708103"
+  },
+  {
+    "id": "W099",
+    "category": "Civic and community writing",
+    "subcategory": "Impact report",
+    "words": 300,
+    "prompt": "Write a cautious impact summary for a fictional tool library with 140 members and 620 loans. Do not infer money saved or waste avoided directly from loans. Aim for 300 words.",
+    "sha256": "61fdfb55d0de9285ea64db4491abfdebf8fde78b90e0bb6d69290d74c0f69d3f"
+  },
+  {
+    "id": "W100",
+    "category": "Civic and community writing",
+    "subcategory": "Community mediation",
+    "words": 200,
+    "prompt": "Write a neutral summary of a disagreement between neighbors over a shared garden's quiet hours, identifying common ground and a practical trial agreement. Aim for 200 words.",
+    "sha256": "eb1634c902c69198bae58f553e24a1d3368b47cd2c49682e69395692d5425780"
+  }
+]

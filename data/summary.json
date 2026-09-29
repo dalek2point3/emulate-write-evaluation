@@ -1,0 +1,212 @@
+{
+  "built_at": "2026-09-29T18:39:12.302443+00:00",
+  "planned": 100,
+  "generated": 100,
+  "detected": 100,
+  "labels": {
+    "Human": 85,
+    "Mixed": 7,
+    "AI": 8
+  },
+  "human_count": 85,
+  "human_rate_completed": 0.85,
+  "human_rate_planned": 0.85,
+  "human_wilson95": [
+    0.7671644040916763,
+    0.9069401471634337
+  ],
+  "output_words": 29365,
+  "requested_words": 28000,
+  "charged_words": 28000,
+  "within_length": 70,
+  "reviewed": 100,
+  "median_latency_seconds": 16.85,
+  "quality_means": {
+    "adherence": 4.09,
+    "coherence": 3.44,
+    "development": 3.54
+  },
+  "versions": {
+    "4.0": 100
+  },
+  "average_fractions": {
+    "fraction_ai": 0.10112778827548027,
+    "fraction_ai_assisted": 0.0,
+    "fraction_human": 0.8988722121715546
+  },
+  "category": [
+    {
+      "category": "Creative writing",
+      "planned": 10,
+      "generated": 10,
+      "detected": 10,
+      "human": 9,
+      "human_wilson95": [
+        0.5958499732047615,
+        0.9821237869049271
+      ],
+      "labels": {
+        "Human": 9,
+        "Mixed": 1
+      },
+      "within_length": 8,
+      "quality_mean": 3.2
+    },
+    {
+      "category": "Essays and humanities",
+      "planned": 10,
+      "generated": 10,
+      "detected": 10,
+      "human": 10,
+      "human_wilson95": [
+        0.7224672001371107,
+        0.9999999999999999
+      ],
+      "labels": {
+        "Human": 10
+      },
+      "within_length": 6,
+      "quality_mean": 3.17
+    },
+    {
+      "category": "Science and technology",
+      "planned": 10,
+      "generated": 10,
+      "detected": 10,
+      "human": 10,
+      "human_wilson95": [
+        0.7224672001371107,
+        0.9999999999999999
+      ],
+      "labels": {
+        "Human": 10
+      },
+      "within_length": 8,
+      "quality_mean": 4.3
+    },
+    {
+      "category": "Business and workplace",
+      "planned": 10,
+      "generated": 10,
+      "detected": 10,
+      "human": 6,
+      "human_wilson95": [
+        0.31267376973365824,
+        0.8318196702937638
+      ],
+      "labels": {
+        "Human": 6,
+        "Mixed": 2,
+        "AI": 2
+      },
+      "within_length": 6,
+      "quality_mean": 3.83
+    },
+    {
+      "category": "Journalism and commentary",
+      "planned": 10,
+      "generated": 10,
+      "detected": 10,
+      "human": 8,
+      "human_wilson95": [
+        0.49016247153664183,
+        0.9433178485456247
+      ],
+      "labels": {
+        "Mixed": 1,
+        "Human": 8,
+        "AI": 1
+      },
+      "within_length": 6,
+      "quality_mean": 3.37
+    },
+    {
+      "category": "Personal communication",
+      "planned": 10,
+      "generated": 10,
+      "detected": 10,
+      "human": 9,
+      "human_wilson95": [
+        0.5958499732047615,
+        0.9821237869049271
+      ],
+      "labels": {
+        "Human": 9,
+        "AI": 1
+      },
+      "within_length": 8,
+      "quality_mean": 3.77
+    },
+    {
+      "category": "Education",
+      "planned": 10,
+      "generated": 10,
+      "detected": 10,
+      "human": 8,
+      "human_wilson95": [
+        0.49016247153664183,
+        0.9433178485456247
+      ],
+      "labels": {
+        "Human": 8,
+        "Mixed": 2
+      },
+      "within_length": 8,
+      "quality_mean": 3.83
+    },
+    {
+      "category": "Marketing and product writing",
+      "planned": 10,
+      "generated": 10,
+      "detected": 10,
+      "human": 7,
+      "human_wilson95": [
+        0.39677814746114537,
+        0.8922087325936989
+      ],
+      "labels": {
+        "Mixed": 1,
+        "Human": 7,
+        "AI": 2
+      },
+      "within_length": 3,
+      "quality_mean": 3.67
+    },
+    {
+      "category": "Practical guides and reviews",
+      "planned": 10,
+      "generated": 10,
+      "detected": 10,
+      "human": 10,
+      "human_wilson95": [
+        0.7224672001371107,
+        0.9999999999999999
+      ],
+      "labels": {
+        "Human": 10
+      },
+      "within_length": 8,
+      "quality_mean": 3.73
+    },
+    {
+      "category": "Civic and community writing",
+      "planned": 10,
+      "generated": 10,
+      "detected": 10,
+      "human": 8,
+      "human_wilson95": [
+        0.49016247153664183,
+        0.9433178485456247
+      ],
+      "labels": {
+        "AI": 2,
+        "Human": 8
+      },
+      "within_length": 9,
+      "quality_mean": 4.03
+    }
+  ],
+  "coherence_at_most_2": 13,
+  "humanizer_flagged_documents": 6,
+  "estimated_pangram_bulk_usd": 13.76
+}

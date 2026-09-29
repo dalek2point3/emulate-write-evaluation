@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Please cite this exploratory evaluation and the commit hash of the version used."
+title: "Writing Quality and AI-Detector Labels in Emulate Write: A 100-Prompt Exploratory Evaluation"
+authors:
+  - name: Codex
+type: dataset
+date-released: 2026-09-29
+url: "https://github.com/dalek2point3/emulate-write-evaluation"
+abstract: "100 fixed English prompts, unedited Emulate Write outputs, Pangram 4 labels, and subjective writing reviews by one AI assistant."

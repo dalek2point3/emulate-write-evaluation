@@ -1,0 +1,10 @@
+.DS_Store
+__pycache__/
+*.pyc
+.env
+.env.*
+*credentials*
+*.aux
+*.log
+*.out
+*.synctex.gz
